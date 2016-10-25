@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.vo.invocietotal.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtotal"
+        android:id="@+id/SubtotalLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#07104c"
+        android:phoneNumber="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount_percent"
+        android:id="@+id/DiscountPercentLabel"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#040509"
+        android:layout_below="@+id/subtotalEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount_amount"
+        android:id="@+id/DiscountAmountLabel"
+        android:textColor="#0b0404"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/TotalLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:id="@+id/TotalLabel"
+        android:textColor="#0c0404"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/discountAmountTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/subtotalEditText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/discountPercentTextView"
+        android:text="@string/percent"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/DiscountPercentLabel"
+        android:layout_toRightOf="@+id/DiscountPercentLabel"
+        android:layout_toEndOf="@+id/DiscountPercentLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/discountAmountTextView"
+        android:text="@string/amount"
+        android:textSize="20sp"
+        android:layout_below="@+id/discountPercentTextView"
+        android:layout_alignLeft="@+id/discountPercentTextView"
+        android:layout_alignStart="@+id/discountPercentTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalTextView"
+        android:text="@string/total_value"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/TotalLabel"
+        android:layout_alignLeft="@+id/discountAmountTextView"
+        android:layout_alignStart="@+id/discountAmountTextView" />
+
+</RelativeLayout>
